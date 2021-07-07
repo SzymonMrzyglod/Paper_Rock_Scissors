@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>paper - rock - scissors</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>paper - rock - scissors</h1>
+        <div class="main">
+            <div class="select">
+
+                <h2>Please, choose:</h2>
+                <div class="paper" data-option="paper"><i class="far fa-hand-paper"></i></div>
+                <div class="rock" data-option="rock"><i class="far fa-hand-rock"></i></div>
+                <div class="scissors" data-option="scissors"><i class="far fa-hand-scissors"></i></div>
+            </div>
+
+
+            <div class="panels">
+                <div class="panel-up">
+                    <h3>Game result</h3>
+                    <p>Your choice: <span data-summary="your-choice"></span></p>
+                    <p>Computer choice: <span data-summary="ai-choice"></span></p>
+                    <h2>result: <span data-summary="who-win"></span></h2>
+                </div>
+
+                <div class="panel-down">
+                    <h3>current results</h3>
+                    <p class="numbers">number of games: <span>0</span></p>
+                    <p class="wins">wins: <span>0</span></p>
+                    <p class="losses">losses: <span>0</span></p>
+                    <p class="draws">draws: <span>0</span></p>
+                </div>
+
+            </div>
+        </div>
+        <button class="start">Let's play!</button>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
